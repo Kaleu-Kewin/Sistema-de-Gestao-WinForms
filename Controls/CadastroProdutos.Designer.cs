@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pnlContainer = new Panel();
-            btnLimpar = new Button();
-            btnCadastrarProduto = new Button();
+            lblTitulo = new Label();
+            lblDescricao = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             txtPreco = new TextBox();
             txtDescricao = new TextBox();
@@ -44,53 +43,38 @@
             label2 = new Label();
             label1 = new Label();
             txtQuantidade = new TextBox();
-            lblDescricao = new Label();
-            lblTitulo = new Label();
-            pnlContainer.SuspendLayout();
+            btnCadastrarProduto = new Button();
+            btnLimpar = new Button();
+            pnlContainer = new Panel();
             tableLayoutPanel1.SuspendLayout();
+            pnlContainer.SuspendLayout();
             SuspendLayout();
             // 
-            // pnlContainer
+            // lblTitulo
             // 
-            pnlContainer.BackColor = Color.White;
-            pnlContainer.Controls.Add(btnLimpar);
-            pnlContainer.Controls.Add(btnCadastrarProduto);
-            pnlContainer.Controls.Add(tableLayoutPanel1);
-            pnlContainer.Controls.Add(lblDescricao);
-            pnlContainer.Controls.Add(lblTitulo);
-            pnlContainer.Dock = DockStyle.Fill;
-            pnlContainer.Location = new Point(0, 0);
-            pnlContainer.Name = "pnlContainer";
-            pnlContainer.Size = new Size(900, 300);
-            pnlContainer.TabIndex = 0;
+            lblTitulo.AutoSize = true;
+            lblTitulo.Dock = DockStyle.Top;
+            lblTitulo.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(0, 0);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Padding = new Padding(20, 20, 0, 0);
+            lblTitulo.Size = new Size(139, 43);
+            lblTitulo.TabIndex = 2;
+            lblTitulo.Text = "Novo Produto";
+            lblTitulo.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // btnLimpar
+            // lblDescricao
             // 
-            btnLimpar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnLimpar.BackColor = Color.WhiteSmoke;
-            btnLimpar.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
-            btnLimpar.FlatStyle = FlatStyle.Flat;
-            btnLimpar.Location = new Point(614, 264);
-            btnLimpar.Name = "btnLimpar";
-            btnLimpar.Size = new Size(75, 34);
-            btnLimpar.TabIndex = 6;
-            btnLimpar.Text = "Limpar";
-            btnLimpar.UseVisualStyleBackColor = false;
-            // 
-            // btnCadastrarProduto
-            // 
-            btnCadastrarProduto.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCadastrarProduto.BackColor = Color.Gray;
-            btnCadastrarProduto.FlatAppearance.BorderSize = 0;
-            btnCadastrarProduto.FlatStyle = FlatStyle.Flat;
-            btnCadastrarProduto.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCadastrarProduto.ForeColor = Color.White;
-            btnCadastrarProduto.Location = new Point(695, 262);
-            btnCadastrarProduto.Name = "btnCadastrarProduto";
-            btnCadastrarProduto.Size = new Size(180, 34);
-            btnCadastrarProduto.TabIndex = 5;
-            btnCadastrarProduto.Text = "+ Cadastrar Produto";
-            btnCadastrarProduto.UseVisualStyleBackColor = false;
+            lblDescricao.AutoSize = true;
+            lblDescricao.Dock = DockStyle.Top;
+            lblDescricao.Font = new Font("Segoe UI Semilight", 12F);
+            lblDescricao.ForeColor = SystemColors.ControlDarkDark;
+            lblDescricao.Location = new Point(0, 43);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Padding = new Padding(20, 0, 0, 0);
+            lblDescricao.Size = new Size(393, 21);
+            lblDescricao.TabIndex = 3;
+            lblDescricao.Text = "Preencha os campos para cadastrar um novo produto";
             // 
             // tableLayoutPanel1
             // 
@@ -276,31 +260,47 @@
             txtQuantidade.Size = new Size(260, 29);
             txtQuantidade.TabIndex = 18;
             // 
-            // lblDescricao
+            // btnCadastrarProduto
             // 
-            lblDescricao.AutoSize = true;
-            lblDescricao.Dock = DockStyle.Top;
-            lblDescricao.Font = new Font("Segoe UI Semilight", 12F);
-            lblDescricao.ForeColor = SystemColors.ControlDarkDark;
-            lblDescricao.Location = new Point(0, 43);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Padding = new Padding(20, 0, 0, 0);
-            lblDescricao.Size = new Size(393, 21);
-            lblDescricao.TabIndex = 3;
-            lblDescricao.Text = "Preencha os campos para cadastrar um novo produto";
+            btnCadastrarProduto.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnCadastrarProduto.BackColor = Color.Gray;
+            btnCadastrarProduto.FlatAppearance.BorderSize = 0;
+            btnCadastrarProduto.FlatStyle = FlatStyle.Flat;
+            btnCadastrarProduto.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCadastrarProduto.ForeColor = Color.White;
+            btnCadastrarProduto.Location = new Point(695, 262);
+            btnCadastrarProduto.Name = "btnCadastrarProduto";
+            btnCadastrarProduto.Size = new Size(180, 34);
+            btnCadastrarProduto.TabIndex = 5;
+            btnCadastrarProduto.Text = "+ Cadastrar Produto";
+            btnCadastrarProduto.UseVisualStyleBackColor = false;
             // 
-            // lblTitulo
+            // btnLimpar
             // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Dock = DockStyle.Top;
-            lblTitulo.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(0, 0);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Padding = new Padding(20, 20, 0, 0);
-            lblTitulo.Size = new Size(139, 43);
-            lblTitulo.TabIndex = 2;
-            lblTitulo.Text = "Novo Produto";
-            lblTitulo.TextAlign = ContentAlignment.MiddleLeft;
+            btnLimpar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnLimpar.BackColor = Color.WhiteSmoke;
+            btnLimpar.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            btnLimpar.FlatStyle = FlatStyle.Flat;
+            btnLimpar.Location = new Point(614, 264);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(75, 34);
+            btnLimpar.TabIndex = 6;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = false;
+            // 
+            // pnlContainer
+            // 
+            pnlContainer.BackColor = Color.White;
+            pnlContainer.Controls.Add(btnLimpar);
+            pnlContainer.Controls.Add(btnCadastrarProduto);
+            pnlContainer.Controls.Add(tableLayoutPanel1);
+            pnlContainer.Controls.Add(lblDescricao);
+            pnlContainer.Controls.Add(lblTitulo);
+            pnlContainer.Dock = DockStyle.Fill;
+            pnlContainer.Location = new Point(0, 0);
+            pnlContainer.Name = "pnlContainer";
+            pnlContainer.Size = new Size(900, 300);
+            pnlContainer.TabIndex = 0;
             // 
             // CadastroProdutos
             // 
@@ -311,32 +311,32 @@
             Name = "CadastroProdutos";
             Size = new Size(900, 300);
             Load += CadastroProdutos_Load;
-            pnlContainer.ResumeLayout(false);
-            pnlContainer.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            pnlContainer.ResumeLayout(false);
+            pnlContainer.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel pnlContainer;
         private Label lblTitulo;
         private Label lblDescricao;
         private TableLayoutPanel tableLayoutPanel1;
+        private TextBox txtPreco;
+        private TextBox txtDescricao;
+        private Label label6;
+        private Label label5;
+        private Label label4;
         private TextBox txtCodigo;
         private ComboBox cmbCategoria;
         private TextBox txtNome;
         private Label label3;
         private Label label2;
         private Label label1;
-        private Label label4;
         private TextBox txtQuantidade;
-        private Label label5;
-        private Label label6;
-        private TextBox txtDescricao;
-        private TextBox txtPreco;
         private Button btnCadastrarProduto;
         private Button btnLimpar;
+        private Panel pnlContainer;
     }
 }

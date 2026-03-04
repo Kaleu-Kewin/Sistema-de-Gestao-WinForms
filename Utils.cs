@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing.Drawing2D;
 using static Dashboard.Enums;
 
@@ -6,6 +7,33 @@ namespace Dashboard
 {
     public static class Utils
     {
+        public static List<object> EnumParaComboBox<T>() where T : Enum
+        {
+            //Adicionar no comboBox:
+
+            // - DisplayMember = "Text"
+            // - ValueMember   = "Value"
+
+            return Enum.GetValues(typeof(T))
+                .Cast<T>()
+                .Select(e => new
+                {
+                    Value = e,
+                    Text = GetDescription((Enum)(object)e)
+                })
+                .Cast<object>()
+                .ToList();
+        }
+
+        public static string GetDescription(Enum value)
+        {
+            var field = value.GetType().GetField(value.ToString());
+            var attribute = (DescriptionAttribute)
+                Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute));
+
+            return attribute == null ? value.ToString() : attribute.Description;
+        }
+
         public static void AplicarBorda(Control control, LadoBorda lado, int espessura = 1, Color? cor = null) // retirar dps
         {
             control.Paint += (sender, e) =>

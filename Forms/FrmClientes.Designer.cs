@@ -41,10 +41,12 @@
             lblTitulo = new Label();
             imgIcons = new ImageList(components);
             tlpCadastro = new TableLayoutPanel();
+            ccCadastroClientes = new Dashboard.Controls.CadastroClientes();
             tlpListagem = new TableLayoutPanel();
             gbClientes = new Dashboard.Controls.GridBase();
             pnlTop.SuspendLayout();
             tlpCards.SuspendLayout();
+            tlpCadastro.SuspendLayout();
             tlpListagem.SuspendLayout();
             SuspendLayout();
             // 
@@ -191,13 +193,23 @@
             tlpCadastro.ColumnCount = 1;
             tlpCadastro.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpCadastro.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tlpCadastro.Controls.Add(ccCadastroClientes, 0, 0);
             tlpCadastro.Dock = DockStyle.Top;
             tlpCadastro.Location = new Point(0, 245);
             tlpCadastro.Name = "tlpCadastro";
             tlpCadastro.RowCount = 1;
             tlpCadastro.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpCadastro.Size = new Size(1150, 364);
+            tlpCadastro.Size = new Size(1150, 383);
             tlpCadastro.TabIndex = 7;
+            // 
+            // ccCadastroClientes
+            // 
+            ccCadastroClientes.Dock = DockStyle.Fill;
+            ccCadastroClientes.Location = new Point(35, 25);
+            ccCadastroClientes.Margin = new Padding(35, 25, 35, 1);
+            ccCadastroClientes.Name = "ccCadastroClientes";
+            ccCadastroClientes.Size = new Size(1080, 357);
+            ccCadastroClientes.TabIndex = 0;
             // 
             // tlpListagem
             // 
@@ -206,7 +218,7 @@
             tlpListagem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tlpListagem.Controls.Add(gbClientes, 0, 0);
             tlpListagem.Dock = DockStyle.Top;
-            tlpListagem.Location = new Point(0, 609);
+            tlpListagem.Location = new Point(0, 628);
             tlpListagem.Name = "tlpListagem";
             tlpListagem.RowCount = 1;
             tlpListagem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -241,6 +253,7 @@
             pnlTop.ResumeLayout(false);
             pnlTop.PerformLayout();
             tlpCards.ResumeLayout(false);
+            tlpCadastro.ResumeLayout(false);
             tlpListagem.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -260,5 +273,6 @@
         private TableLayoutPanel tlpCadastro;
         private TableLayoutPanel tlpListagem;
         private Controls.GridBase gbClientes;
+        private Controls.CadastroClientes ccCadastroClientes;
     }
 }
