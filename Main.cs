@@ -38,6 +38,7 @@ namespace Dashboard
         private void btnVendas_Click(object sender, EventArgs e)
         {
             SelecionarButton((Button)sender);
+            AbrirTela(new FrmVendas());
         }
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)

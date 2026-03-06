@@ -281,7 +281,8 @@
             btnLimpar.BackColor = Color.WhiteSmoke;
             btnLimpar.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
             btnLimpar.FlatStyle = FlatStyle.Flat;
-            btnLimpar.Location = new Point(614, 264);
+            btnLimpar.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            btnLimpar.Location = new Point(614, 262);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(75, 34);
             btnLimpar.TabIndex = 6;

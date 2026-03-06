@@ -36,6 +36,11 @@ namespace Dashboard.Controls
             dgvDados.DataSource = data;
         }
 
+        public void AddColumn(DataGridViewColumn column)
+        {
+            dgvDados.Columns.Add(column);
+        }
+
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);

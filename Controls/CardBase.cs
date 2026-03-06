@@ -19,8 +19,8 @@ namespace Dashboard
         public void ConfigurarCard(
             string titulo, 
             string descricao, 
-            string estatistica,
-            Color? cor   = null,
+            string estatistica = "",
+            Color? cor = null,
             Image? icone = null
         )
         {
