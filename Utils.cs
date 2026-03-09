@@ -34,7 +34,7 @@ namespace Dashboard
             return attribute == null ? value.ToString() : attribute.Description;
         }
 
-        public static void AplicarBorda(Control control, LadoBorda lado, int espessura = 1, Color? cor = null) // retirar dps
+        public static void AplicarBorda(Control control, LadoBorda lado, int espessura = 1, Color? cor = null)
         {
             control.Paint += (sender, e) =>
             {
@@ -58,6 +58,13 @@ namespace Dashboard
 
                         case LadoBorda.Direita:
                             e.Graphics.DrawLine(pen, control.Width - espessura, 0, control.Width - espessura, control.Height);
+                            break;
+
+                        case LadoBorda.Todos:
+                            e.Graphics.DrawLine(pen, 0, 0, control.Width, 0); // superior
+                            e.Graphics.DrawLine(pen, 0, control.Height - espessura, control.Width, control.Height - espessura); // inferior
+                            e.Graphics.DrawLine(pen, 0, 0, 0, control.Height); // esquerda
+                            e.Graphics.DrawLine(pen, control.Width - espessura, 0, control.Width - espessura, control.Height); // direita
                             break;
                     }
                 }

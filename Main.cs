@@ -49,6 +49,7 @@ namespace Dashboard
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             SelecionarButton((Button)sender);
+            AbrirTela(new FrmUsuarios());
         }
 
         //private void btnMinimizar_Click(object sender, EventArgs e)

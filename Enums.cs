@@ -12,7 +12,8 @@ namespace Dashboard
             Superior,
             Inferior,
             Esquerda,
-            Direita
+            Direita,
+            Todos
         }
 
         public enum Estados

@@ -41,9 +41,9 @@
             lblTitulo = new Label();
             imgIcons = new ImageList(components);
             tlpCadastro = new TableLayoutPanel();
-            ccCadastroClientes = new Dashboard.Controls.CadastroClientes();
+            ccCadastroClientes = new Dashboard.UserControls.CadastroClientes();
             tlpListagem = new TableLayoutPanel();
-            gbClientes = new Dashboard.Controls.GridBase();
+            gbClientes = new Dashboard.UserControls.GridBase();
             pnlTop.SuspendLayout();
             tlpCards.SuspendLayout();
             tlpCadastro.SuspendLayout();
@@ -272,7 +272,7 @@
         private ImageList imgIcons;
         private TableLayoutPanel tlpCadastro;
         private TableLayoutPanel tlpListagem;
-        private Controls.GridBase gbClientes;
-        private Controls.CadastroClientes ccCadastroClientes;
+        private UserControls.GridBase gbClientes;
+        private UserControls.CadastroClientes ccCadastroClientes;
     }
 }

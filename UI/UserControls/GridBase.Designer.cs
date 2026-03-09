@@ -1,4 +1,4 @@
-﻿namespace Dashboard.Controls
+﻿namespace Dashboard.UserControls
 {
     partial class GridBase
     {

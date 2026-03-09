@@ -41,9 +41,9 @@
             lblTitulo = new Label();
             imgIcons = new ImageList(components);
             tlpCadastro = new TableLayoutPanel();
-            cpCadastro = new Dashboard.Controls.CadastroProdutos();
+            cpCadastro = new Dashboard.UserControls.CadastroProdutos();
             tlpListagem = new TableLayoutPanel();
-            gbProdutos = new Dashboard.Controls.GridBase();
+            gbProdutos = new Dashboard.UserControls.GridBase();
             pnlTop.SuspendLayout();
             tlpCards.SuspendLayout();
             tlpCadastro.SuspendLayout();
@@ -266,15 +266,15 @@
         private Button btnFechar;
         private Label label2;
         private Label lblTitulo;
-        private TableLayoutPanel tlpCards;
         private ImageList imgIcons;
         private TableLayoutPanel tlpCadastro;
-        private Controls.CadastroProdutos cpCadastro;
+        private UserControls.CadastroProdutos cpCadastro;
         private TableLayoutPanel tlpListagem;
+        private UserControls.GridBase lpListagem;
+        private UserControls.GridBase gbProdutos;
+        private TableLayoutPanel tlpCards;
+        private CardBase cbTotalProdutos;
         private CardBase cbEstoqueTotal;
         private CardBase cbValorEstoque;
-        private Controls.GridBase lpListagem;
-        private CardBase cbTotalProdutos;
-        private Controls.GridBase gbProdutos;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Dashboard.Forms
 {
-    partial class FrmVendas
+    partial class FrmUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVendas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuarios));
             pnlTop = new Panel();
             tlpCards = new TableLayoutPanel();
-            cbTotalVendas = new CardBase();
-            cbVendasAprovadas = new CardBase();
-            cbVendasPendentes = new CardBase();
+            cbAcessoCompleto = new CardBase();
+            cbCadastrados = new CardBase();
+            cbComAcesso = new CardBase();
+            cbSemAcesso = new CardBase();
             btnMinimizar = new Button();
             btnFechar = new Button();
             label2 = new Label();
             lblTitulo = new Label();
             imgIcons = new ImageList(components);
             tlpCadastro = new TableLayoutPanel();
-            cvCadastroVendas = new Dashboard.UserControls.CadastroVendas();
+            cadastroUsuario1 = new Dashboard.UserControls.CadastroUsuario();
             tlpListagem = new TableLayoutPanel();
-            gbVendas = new Dashboard.UserControls.GridBase();
+            gbUsuarios = new Dashboard.UserControls.GridBase();
             pnlTop.SuspendLayout();
             tlpCards.SuspendLayout();
             tlpCadastro.SuspendLayout();
@@ -61,62 +62,75 @@
             pnlTop.Dock = DockStyle.Top;
             pnlTop.Location = new Point(0, 0);
             pnlTop.Name = "pnlTop";
-            pnlTop.Size = new Size(1137, 245);
-            pnlTop.TabIndex = 7;
+            pnlTop.Size = new Size(1200, 245);
+            pnlTop.TabIndex = 8;
             // 
             // tlpCards
             // 
-            tlpCards.ColumnCount = 3;
-            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tlpCards.Controls.Add(cbTotalVendas, 0, 0);
-            tlpCards.Controls.Add(cbVendasAprovadas, 1, 0);
-            tlpCards.Controls.Add(cbVendasPendentes, 2, 0);
+            tlpCards.ColumnCount = 4;
+            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tlpCards.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tlpCards.Controls.Add(cbAcessoCompleto, 3, 0);
+            tlpCards.Controls.Add(cbCadastrados, 0, 0);
+            tlpCards.Controls.Add(cbComAcesso, 1, 0);
+            tlpCards.Controls.Add(cbSemAcesso, 2, 0);
             tlpCards.Dock = DockStyle.Fill;
             tlpCards.Location = new Point(0, 111);
             tlpCards.Name = "tlpCards";
             tlpCards.RowCount = 1;
             tlpCards.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpCards.Size = new Size(1137, 134);
-            tlpCards.TabIndex = 5;
+            tlpCards.Size = new Size(1200, 134);
+            tlpCards.TabIndex = 6;
             // 
-            // cbTotalVendas
+            // cbAcessoCompleto
             // 
-            cbTotalVendas.BackColor = Color.White;
-            cbTotalVendas.Dock = DockStyle.Fill;
-            cbTotalVendas.Location = new Point(35, 1);
-            cbTotalVendas.Margin = new Padding(35, 1, 15, 0);
-            cbTotalVendas.MaximumSize = new Size(0, 130);
-            cbTotalVendas.MinimumSize = new Size(260, 130);
-            cbTotalVendas.Name = "cbTotalVendas";
-            cbTotalVendas.Size = new Size(329, 130);
-            cbTotalVendas.TabIndex = 3;
+            cbAcessoCompleto.BackColor = Color.White;
+            cbAcessoCompleto.Dock = DockStyle.Fill;
+            cbAcessoCompleto.Location = new Point(915, 1);
+            cbAcessoCompleto.Margin = new Padding(15, 1, 35, 0);
+            cbAcessoCompleto.MaximumSize = new Size(0, 130);
+            cbAcessoCompleto.MinimumSize = new Size(260, 130);
+            cbAcessoCompleto.Name = "cbAcessoCompleto";
+            cbAcessoCompleto.Size = new Size(260, 130);
+            cbAcessoCompleto.TabIndex = 4;
             // 
-            // cbVendasAprovadas
+            // cbCadastrados
             // 
-            cbVendasAprovadas.BackColor = Color.White;
-            cbVendasAprovadas.Dock = DockStyle.Fill;
-            cbVendasAprovadas.Location = new Point(389, 1);
-            cbVendasAprovadas.Margin = new Padding(10, 1, 10, 0);
-            cbVendasAprovadas.MaximumSize = new Size(0, 130);
-            cbVendasAprovadas.MinimumSize = new Size(260, 130);
-            cbVendasAprovadas.Name = "cbVendasAprovadas";
-            cbVendasAprovadas.Size = new Size(359, 130);
-            cbVendasAprovadas.TabIndex = 1;
+            cbCadastrados.BackColor = Color.White;
+            cbCadastrados.Dock = DockStyle.Fill;
+            cbCadastrados.Location = new Point(35, 1);
+            cbCadastrados.Margin = new Padding(35, 1, 15, 0);
+            cbCadastrados.MaximumSize = new Size(0, 130);
+            cbCadastrados.MinimumSize = new Size(260, 130);
+            cbCadastrados.Name = "cbCadastrados";
+            cbCadastrados.Size = new Size(260, 130);
+            cbCadastrados.TabIndex = 3;
             // 
-            // cbVendasPendentes
+            // cbComAcesso
             // 
-            cbVendasPendentes.BackColor = Color.White;
-            cbVendasPendentes.Dock = DockStyle.Fill;
-            cbVendasPendentes.Location = new Point(773, 1);
-            cbVendasPendentes.Margin = new Padding(15, 1, 35, 0);
-            cbVendasPendentes.MaximumSize = new Size(0, 130);
-            cbVendasPendentes.MinimumSize = new Size(260, 130);
-            cbVendasPendentes.Name = "cbVendasPendentes";
-            cbVendasPendentes.Size = new Size(329, 130);
-            cbVendasPendentes.TabIndex = 2;
+            cbComAcesso.BackColor = Color.White;
+            cbComAcesso.Dock = DockStyle.Fill;
+            cbComAcesso.Location = new Point(315, 1);
+            cbComAcesso.Margin = new Padding(15, 1, 15, 0);
+            cbComAcesso.MaximumSize = new Size(0, 130);
+            cbComAcesso.MinimumSize = new Size(260, 130);
+            cbComAcesso.Name = "cbComAcesso";
+            cbComAcesso.Size = new Size(270, 130);
+            cbComAcesso.TabIndex = 1;
+            // 
+            // cbSemAcesso
+            // 
+            cbSemAcesso.BackColor = Color.White;
+            cbSemAcesso.Dock = DockStyle.Fill;
+            cbSemAcesso.Location = new Point(615, 1);
+            cbSemAcesso.Margin = new Padding(15, 1, 15, 0);
+            cbSemAcesso.MaximumSize = new Size(0, 130);
+            cbSemAcesso.MinimumSize = new Size(260, 130);
+            cbSemAcesso.Name = "cbSemAcesso";
+            cbSemAcesso.Size = new Size(270, 130);
+            cbSemAcesso.TabIndex = 2;
             // 
             // btnMinimizar
             // 
@@ -124,7 +138,7 @@
             btnMinimizar.FlatAppearance.BorderSize = 0;
             btnMinimizar.FlatStyle = FlatStyle.Flat;
             btnMinimizar.Font = new Font("Tahoma", 13F, FontStyle.Bold);
-            btnMinimizar.Location = new Point(4826, -3);
+            btnMinimizar.Location = new Point(5826, -3);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Size = new Size(45, 27);
             btnMinimizar.TabIndex = 4;
@@ -138,7 +152,7 @@
             btnFechar.FlatAppearance.BorderSize = 0;
             btnFechar.FlatStyle = FlatStyle.Flat;
             btnFechar.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            btnFechar.Location = new Point(4873, -1);
+            btnFechar.Location = new Point(5873, -1);
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(45, 25);
             btnFechar.TabIndex = 3;
@@ -155,9 +169,9 @@
             label2.Location = new Point(0, 62);
             label2.Name = "label2";
             label2.Padding = new Padding(33, 3, 0, 25);
-            label2.Size = new Size(326, 49);
+            label2.Size = new Size(364, 49);
             label2.TabIndex = 1;
-            label2.Text = "Registros e acompanhamentos de vendas";
+            label2.Text = "Gerencie usuários e suas permissões de acesso";
             // 
             // lblTitulo
             // 
@@ -167,9 +181,9 @@
             lblTitulo.Location = new Point(0, 0);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Padding = new Padding(30, 30, 0, 0);
-            lblTitulo.Size = new Size(125, 62);
+            lblTitulo.Size = new Size(143, 62);
             lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "Vendas";
+            lblTitulo.Text = "Usuários";
             lblTitulo.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // imgIcons
@@ -187,73 +201,68 @@
             imgIcons.Images.SetKeyName(7, "logout.png");
             imgIcons.Images.SetKeyName(8, "logout_red.png");
             imgIcons.Images.SetKeyName(9, "graphs.png");
-            imgIcons.Images.SetKeyName(10, "edit (1).png");
-            imgIcons.Images.SetKeyName(11, "edit.png");
-            imgIcons.Images.SetKeyName(12, "visible.png");
-            imgIcons.Images.SetKeyName(13, "trash.png");
             // 
             // tlpCadastro
             // 
             tlpCadastro.ColumnCount = 1;
             tlpCadastro.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpCadastro.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tlpCadastro.Controls.Add(cvCadastroVendas, 0, 0);
+            tlpCadastro.Controls.Add(cadastroUsuario1, 0, 0);
             tlpCadastro.Dock = DockStyle.Top;
             tlpCadastro.Location = new Point(0, 245);
             tlpCadastro.Name = "tlpCadastro";
             tlpCadastro.RowCount = 1;
             tlpCadastro.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpCadastro.Size = new Size(1137, 558);
-            tlpCadastro.TabIndex = 8;
+            tlpCadastro.Size = new Size(1200, 425);
+            tlpCadastro.TabIndex = 9;
             // 
-            // cvCadastroVendas
+            // cadastroUsuario1
             // 
-            cvCadastroVendas.Dock = DockStyle.Fill;
-            cvCadastroVendas.Location = new Point(35, 25);
-            cvCadastroVendas.Margin = new Padding(35, 25, 35, 25);
-            cvCadastroVendas.Name = "cvCadastroVendas";
-            cvCadastroVendas.Size = new Size(1067, 508);
-            cvCadastroVendas.TabIndex = 0;
+            cadastroUsuario1.Dock = DockStyle.Fill;
+            cadastroUsuario1.Location = new Point(35, 25);
+            cadastroUsuario1.Margin = new Padding(35, 25, 35, 1);
+            cadastroUsuario1.Name = "cadastroUsuario1";
+            cadastroUsuario1.Size = new Size(1130, 399);
+            cadastroUsuario1.TabIndex = 0;
             // 
             // tlpListagem
             // 
             tlpListagem.ColumnCount = 1;
             tlpListagem.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpListagem.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tlpListagem.Controls.Add(gbVendas, 0, 0);
-            tlpListagem.Dock = DockStyle.Fill;
-            tlpListagem.Location = new Point(0, 803);
+            tlpListagem.Controls.Add(gbUsuarios, 0, 0);
+            tlpListagem.Dock = DockStyle.Top;
+            tlpListagem.Location = new Point(0, 670);
             tlpListagem.Name = "tlpListagem";
             tlpListagem.RowCount = 1;
             tlpListagem.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpListagem.Size = new Size(1137, 258);
-            tlpListagem.TabIndex = 9;
+            tlpListagem.Size = new Size(1200, 364);
+            tlpListagem.TabIndex = 10;
             // 
-            // gbVendas
+            // gbUsuarios
             // 
-            gbVendas.BackColor = Color.Transparent;
-            gbVendas.Dock = DockStyle.Fill;
-            gbVendas.Location = new Point(35, 0);
-            gbVendas.Margin = new Padding(35, 0, 35, 25);
-            gbVendas.Name = "gbVendas";
-            gbVendas.Size = new Size(1067, 233);
-            gbVendas.TabIndex = 0;
+            gbUsuarios.BackColor = Color.Transparent;
+            gbUsuarios.Dock = DockStyle.Fill;
+            gbUsuarios.Location = new Point(35, 25);
+            gbUsuarios.Margin = new Padding(35, 25, 35, 25);
+            gbUsuarios.Name = "gbUsuarios";
+            gbUsuarios.Size = new Size(1130, 314);
+            gbUsuarios.TabIndex = 0;
             // 
-            // FrmVendas
+            // FrmUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1137, 1061);
+            ClientSize = new Size(1200, 1000);
             Controls.Add(tlpListagem);
             Controls.Add(tlpCadastro);
             Controls.Add(pnlTop);
             FormBorderStyle = FormBorderStyle.None;
             KeyPreview = true;
-            Name = "FrmVendas";
+            Name = "FrmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmVendas";
-            Load += FrmVendas_Load;
+            Load += FrmUsuarios_Load;
             pnlTop.ResumeLayout(false);
             pnlTop.PerformLayout();
             tlpCards.ResumeLayout(false);
@@ -265,18 +274,19 @@
         #endregion
 
         private Panel pnlTop;
-        private TableLayoutPanel tlpCards;
-        private CardBase cbTotalVendas;
-        private CardBase cbVendasAprovadas;
-        private CardBase cbVendasPendentes;
         private Button btnMinimizar;
         private Button btnFechar;
         private Label label2;
         private Label lblTitulo;
+        private TableLayoutPanel tlpCards;
+        private CardBase cbCadastrados;
+        private CardBase cbComAcesso;
+        private CardBase cbSemAcesso;
+        private CardBase cbAcessoCompleto;
         private ImageList imgIcons;
         private TableLayoutPanel tlpCadastro;
-        private UserControls.CadastroVendas cvCadastroVendas;
+        private UserControls.CadastroUsuario cadastroUsuario1;
         private TableLayoutPanel tlpListagem;
-        private UserControls.GridBase gbVendas;
+        private UserControls.GridBase gbUsuarios;
     }
 }

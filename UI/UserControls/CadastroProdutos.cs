@@ -7,7 +7,7 @@ using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Dashboard.Controls
+namespace Dashboard.UserControls
 {
     public partial class CadastroProdutos : UserControl
     {
