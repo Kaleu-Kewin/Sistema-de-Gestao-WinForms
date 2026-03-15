@@ -117,37 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="imgIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="imgIcon.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
-        LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
-        SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAATgUAAAJNU0Z0AUkBTAMBAQAB
-        kAEDAZABAwEQAQABEAEABP8BIQEACP8BQgFNATYHAAE2AwABKAMAAUADAAEQAwABAQEAASAGAAEQEgAU
-        /wP1Af8DqwH/A4QB/wOJAf8BnwKhAf8BewGCAYMB/wG4AbwBugH/AWkBdgF4Af8BowKqAf8BpAKpAf8B
-        oAKlAf/AABD/A98B/wONAf8DdgH/A3IB/wN8Af8BnwKhAf8BeQGDAYUB/wHHAc0BywH/AXABgAGCAf8B
-        oQKsAf8BrQK0Af8BrQKyAf/AAAz/A+EB/wN/Af8DYAH/A2cB/wNZAf8DcwH/AZoCngH/AXYBhAGHAf8B
-        kQGcAZ0B/wFxAYcBjAH/AYUBlgGYAf8BjQGZAZsB/wHNAdIB0wH/wAAI/wPzAf8DiAH/A2EB/wNLAf8D
-        SAH/A1IB/wN1Af8BmAKeAf8BXgFyAXcB/wFNAWYBawH/AV8BegGCAf8BYgF5AX0B/wFrAXoBewH/AeAB
-        5QHkAf/AAAj/A7gB/wNwAf8DVQH/A0kB/wNOAf8DWQH/A4MB/wGaAqEB/wFUAW0BcgH/AVEBbQF1Af8B
-        YAF8AYQB/wFlAYIBhQH/AXEBggGDAf8B3gHiAeEB/8AACP8DoAH/A44B/wNUAf8DXgH/A2AB/wNwAf8D
-        mAH/AaABpgGlAf8BZgF4AXwB/wFXAXABdQH/AXUBiwGOAf8BcAGNAZAB/wGIAZkBmgH/Ad4B4gHhAf/A
-        AAj/A7QB/wOIAf8DYgH/A2oB/wNnAf8DgQH/AZ0BoQGiAf8BZQFzAXQB/wFZAWkBbgH/AVgBbAFxAf8B
-        dgGFAYgB/wGlAboBvAH/AasCuQH/AdYB2QHYAf/AAAj/A9wB/wN2Af8DdgH/A3AB/wN5Af8BowKlAf8B
-        ZwF0AXgB/wEzAUQBSAH/AUYBYAFpAf8BXQF0AX0B/wF7AY8BkgH/AdsB4AHfAf8BrgK1Af8BzALPAf/A
-        AAj/A/QB/wObAf8DggH/A4UB/wOQAf8BvAG/AcAB/wFkAXEBdAH/AUMBVQFaAf8BWAFrAXMB/wFpAYUB
-        jQH/AagBuwG/Af8BwgLHAf8BpAGnAaYB/wHAAsEB/8AACP8DzwH/A7EB/wOiAf8DlAH/A5gB/wHAAcIB
-        wQH/AYwBnwGkAf8BbQGEAZEB/wF7AY4BlwH/AZ8BuQHBAf8BnQGvAbQB/wGpAbEBswH/AZwCngH/AZ4C
-        nwH/wAAD/gH/A/gB/wN/Af8DpwH/A8AB/wO0Af8DsQH/AbACtAH/AY8BngGhAf8BsQHIAc4B/wHIAdkB
-        3gH/AcIB1AHXAf8BewGNAZEB/wF+AYgBjAH/AakBqwGqAf8DiQH/wAAD/QH/A7UB/wNsAf8DlgH/A7IB
-        /wPBAf8B1wLYAf8BrgGzAbQB/wG/AsYB/wHnAukB/wPsAf8B2ALZAf8BigKSAf8BZgFvAXIB/wGcAp0B
-        /wN/Af/AAAP3Af8DfwH/A3QB/wODAf8DsQH/A9AB/wPyAf8B9AL3Af8B/AL+Af8D/QH/A/sB/wPIAf8D
-        oAH/AYUBhwGIAf8BeQJ6Af8DcgH/wAADxAH/A1gB/wNgAf8DkwH/A9sB/wP6Af8D/gH/Af4P/wPyAf8D
-        lAH/A18B/wNWAf8DXAH/wAADcQH/A1AB/wOKAf8DygH/A/kB/wP+Af8D/hX/A/AB/wOOAf8DUgH/A1EB
-        /8AAA5QB/wOlAf8D5gH/A/kB/wP8Af8D/QH/A/4Z/wP9Af8DzQH/A4MB/8AAAUIBTQE+BwABPgMAASgD
-        AAFAAwABEAMAAQEBAAEBBQABgBcAA/+BAAs=
-</value>
-  </data>
 </root>

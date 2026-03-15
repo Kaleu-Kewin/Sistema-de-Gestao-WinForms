@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Dashboard
 {
-    public partial class CardBase : UserControl
+    public partial class CardEstatistica : UserControl
     {
-        public CardBase()
+        public CardEstatistica()
         {
             InitializeComponent();
         }

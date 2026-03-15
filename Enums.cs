@@ -37,5 +37,47 @@ namespace Dashboard
             [Description("Pessoa Jurídica")]
             PJ
         }
+
+        public enum Tema
+        {
+            Claro,
+            Escuro
+        }
+
+        public enum FormatoData
+        {
+            [Description("dd/MM/yyyy")]
+            DiaMesAno,
+
+            [Description("MM/dd/yyyy")]
+            MesDiaAno,
+
+            [Description("yyyy/MM/dd")]
+            AnoMesDia
+        }
+
+        public enum Idioma
+        {
+            [Description("Português (Brasil)")]
+            PortuguesBrasil,
+
+            [Description("English (US)")]
+            InglesEstadosUnidos,
+
+            [Description("Español")]
+            Espanhol
+        }
+
+        public enum Moeda
+        {
+            [Description("Real (R$)")]
+            Real,
+
+            [Description("Dólar (US$)")]
+            Dolar,
+
+            [Description("Euro (€)")]
+            Euro
+        }
     }
 }

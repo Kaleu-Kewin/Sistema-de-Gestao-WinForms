@@ -1,6 +1,6 @@
 ﻿namespace Dashboard
 {
-    partial class CardBase
+    partial class CardEstatistica
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardBase));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardEstatistica));
             pnlContainer = new Panel();
             pictureIcone = new PictureBox();
             lblEstatistica = new Label();
@@ -110,7 +110,7 @@
             imgIcon.TransparentColor = Color.Transparent;
             imgIcon.Images.SetKeyName(0, "download.jpeg");
             // 
-            // CardBase
+            // CardEstatistica
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -118,7 +118,7 @@
             Controls.Add(pnlContainer);
             MaximumSize = new Size(0, 130);
             MinimumSize = new Size(260, 130);
-            Name = "CardBase";
+            Name = "CardEstatistica";
             Size = new Size(260, 130);
             pnlContainer.ResumeLayout(false);
             pnlContainer.PerformLayout();

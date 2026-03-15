@@ -44,6 +44,7 @@ namespace Dashboard
         private void btnConfiguracoes_Click(object sender, EventArgs e)
         {
             SelecionarButton((Button)sender);
+            AbrirTela(new FrmConfiguracoes());
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)

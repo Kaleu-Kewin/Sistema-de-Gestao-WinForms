@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProdutos));
             pnlTop = new Panel();
             tlpCards = new TableLayoutPanel();
-            cbTotalProdutos = new CardBase();
-            cbEstoqueTotal = new CardBase();
-            cbValorEstoque = new CardBase();
+            cbTotalProdutos = new CardEstatistica();
+            cbEstoqueTotal = new CardEstatistica();
+            cbValorEstoque = new CardEstatistica();
             btnMinimizar = new Button();
             btnFechar = new Button();
             label2 = new Label();
@@ -273,8 +273,8 @@
         private UserControls.GridBase lpListagem;
         private UserControls.GridBase gbProdutos;
         private TableLayoutPanel tlpCards;
-        private CardBase cbTotalProdutos;
-        private CardBase cbEstoqueTotal;
-        private CardBase cbValorEstoque;
+        private CardEstatistica cbTotalProdutos;
+        private CardEstatistica cbEstoqueTotal;
+        private CardEstatistica cbValorEstoque;
     }
 }

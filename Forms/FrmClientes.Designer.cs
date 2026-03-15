@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes));
             pnlTop = new Panel();
             tlpCards = new TableLayoutPanel();
-            cbTotalClientes = new CardBase();
-            cbPessoaFisica = new CardBase();
-            cbPessoaJuridica = new CardBase();
+            cbTotalClientes = new CardEstatistica();
+            cbPessoaFisica = new CardEstatistica();
+            cbPessoaJuridica = new CardEstatistica();
             btnMinimizar = new Button();
             btnFechar = new Button();
             label2 = new Label();
@@ -262,9 +262,9 @@
 
         private Panel pnlTop;
         private TableLayoutPanel tlpCards;
-        private CardBase cbTotalClientes;
-        private CardBase cbPessoaFisica;
-        private CardBase cbPessoaJuridica;
+        private CardEstatistica cbTotalClientes;
+        private CardEstatistica cbPessoaFisica;
+        private CardEstatistica cbPessoaJuridica;
         private Button btnMinimizar;
         private Button btnFechar;
         private Label label2;
